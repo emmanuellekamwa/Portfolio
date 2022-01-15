@@ -1,0 +1,13 @@
+.img {
+    font-size: 0.5rem;
+}
+
+.navbar {
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(17,17,17,0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    padding-left: 12%;
+}
