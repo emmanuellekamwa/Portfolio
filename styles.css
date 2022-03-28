@@ -59,6 +59,7 @@ h3 {
 
 .section-subtitle-intro, .section-subtitle-about {
     background: #16e0bd;
+    padding: .25em 1em;
     font-family: 'Source Code Pro', monospace;
     margin-bottom: 1em;
 }
@@ -67,6 +68,41 @@ h3 {
     position: relative;
 }
 
+.section-subtitle-intro {
+    display: inline-block;
+}
+
+.intro-img {
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+                        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
 @media (min-width: 600px) {
-    
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro-img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section-subtitle-intro {
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 }
