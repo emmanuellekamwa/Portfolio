@@ -1,17 +1,72 @@
-.img {
-    font-size: 0.5rem;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.navbar {
-    border-radius: 4px;
-    box-shadow: 0px 4px 8px rgba(17,17,17,0.2);
+body {
+    background: #fff;
+    color: #303030;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    padding-left: 12%;
+section {
+    padding:  5em 2em;
 }
 
-.nav-link {
-    font-weight: 700;
+img {
+   display: block;
+   max-width: 100%; 
+}
+
+h1, h2, h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+.section-title {
+    margin-bottom: .25em;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.section-title-intro {
+    font-weight: 300;
+}
+
+.section-title-intro strong {
+    display: block;
+    font-weight: 900;
+}
+
+.section-subtitle-intro, .section-subtitle-about {
+    background: #16e0bd;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1em;
+}
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px) {
+    
 }
