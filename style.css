@@ -90,6 +90,11 @@ h6 { font-size: 16px; }
     background-color: var(--mainColor);
 }
 
+.heading {
+    text-align: center;
+    line-height: 0;
+}
+
 #navigation {
     margin: 0;
     padding: 10px;
