@@ -11,6 +11,8 @@
 
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
+
+    --buttonColor: black;
 }
 
 html, body {
@@ -32,6 +34,7 @@ h1, h2, h3, h4, h5, h6, strong {
 a {
     text-decoration: none;
     color: #17a2b8;
+    font-family: 'Roboto Mono', monospace;
 }
 
 ul {
@@ -291,6 +294,41 @@ h6 { font-size: 16px; }
 .post-intro {
     color: #4b5156;
     font-size: 16px;
+}
+
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+
+#contact-form label {
+    line-height: 2.7em;
+}
+
+.input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: 14px;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: var(--buttonColor);
+    border: none;
 }
 
 #skills {
