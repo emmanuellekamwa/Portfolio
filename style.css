@@ -20,6 +20,10 @@ html, body {
     margin: 0;
 }
 
+body *{
+    transition: 0.3s;
+}
+
 p, li, span, label, input, textarea {
     color: var(--secondaryText);
     font-family: 'Roboto Mono', monospace;
@@ -95,6 +99,10 @@ h6 { font-size: 16px; }
     justify-content: space-between;
     align-items: center;
     background-color: var(--mainColor);
+}
+
+#navigation a {
+    color: var(--mainText);
 }
 
 .heading {
