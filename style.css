@@ -7,7 +7,6 @@
     font-family: "Poppins";
 }
 
-
 html {
   font-size: 60%;
   overflow-x: hidden;
@@ -23,7 +22,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 4rem 15%;
+  padding: 4rem 10%;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
@@ -63,4 +62,144 @@ span {
 
 .navbar a {
   font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid #ea580c;
+  color: #ea580c;
+}
+
+.gradient-btn {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(
+    270deg,
+    #DF8908 10%,
+    #ff1d15 100%
+  );
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+  text-wrap: nowrap;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff1d15;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 15%;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.home-content h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-content h3 {
+  margin: 1rem 0;
+  font-size: 4rem;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.home-img img {
+  width: 23vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #ea580c;
+  transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover {
+  box-shadow: 0 0 25px #ea580c,
+              0 0 50px #ea580c,
+              0 0 100px #ea580c;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid #ea580c;
+  border-radius: 50%;
+  color: #ea580c;
+  margin: 3rem 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #ea580c;
+  color: white;
+  transform: scale(1.2)translateY(-5px);
+  box-shadow: 0 0 25px #ea580c;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #ea580c;
+  box-shadow: 0 0 25px #ea580c;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ea580c,
+              0 0 50px #ea580c;
+}
+
+.btn-group a:nth-of-type(2) {
+  background-color: black;
+  color: #ea580c;
+  border: 2px solid #ea580c;
+  box-shadow: 0 0 25px transparent;
+}
+
+.btn-group a:nth-of-type(2):hover {
+  background-color: #ea580c;
+  color: black;
+  box-shadow: 0 0 25px #ea580c,
 }
