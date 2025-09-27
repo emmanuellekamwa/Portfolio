@@ -203,3 +203,49 @@ section {
   color: black;
   box-shadow: 0 0 25px #ea580c,
 }
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: #101010;
+}
+
+.about-img img {
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #ea580c;
+  transition: 0.4s ease-in-out;
+}
+
+.about-img img:hover {
+  box-shadow: 0 0 25px #ea580c,
+              0 0 50px #ea580c,
+              0 0 100px #ea580c;
+}
+
+.about-content h2 {
+  font-size: 7rem;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 1.8rem;
+}
+
+.about-content .btn {
+  margin: 3rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ea580c;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
